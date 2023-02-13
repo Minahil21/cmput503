@@ -38,7 +38,7 @@ class StateNode(DTROS):
 		self.veh_name = rospy.get_namespace().strip("/")
 
         # Get static parameters
-		self._radius = rospy.get_param('/csc22945kinematics_node/radius', 350)
+		self._radius = rospy.get_param('/csc22945kinematics_node/radius', 318)
 
         # Subscribing to the wheel encoders
 		self.sub_pose = rospy.Subscriber('/pose', Pose2DStamped, self.cb_pose, queue_size = 1 )
@@ -165,7 +165,7 @@ class StateNode(DTROS):
 
 			if state == 0:
 		
-				while( abs(theta) < (((math.pi)/2)- 1.5)):
+				while( abs(theta) < (((math.pi)/2)- 1)):
 					print("in state 0")
 					print("theta", theta)
 					self.turn_right(0.25)
