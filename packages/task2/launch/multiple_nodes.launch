@@ -1,0 +1,10 @@
+<launch>
+
+  <node pkg="task2" type="01_pose.py" name="robot_pose_node" output="screen"/> 
+  <node pkg="task2" type="02_states.py" name="robot_state_node" output="screen"/>  
+  <node pkg="task2" type="03_led_server.py" name="robot_led_node" output="screen"/> 
+  <node pkg="task2" type="04_transformation.py" name="robot_transformation_node" output="screen"/>  
+
+</launch>
+
+
