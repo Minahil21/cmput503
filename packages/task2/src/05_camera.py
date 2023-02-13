@@ -42,3 +42,4 @@ if __name__ == '__main__':
     node = CameraNode(node_name='robot_camera_node')
     node.run()
     rospy.spin() 
+
